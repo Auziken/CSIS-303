@@ -1,6 +1,7 @@
 #include <string>
 #include <fstream> // for reading files
 #include <iostream>
+#include <vector>
 #include "assignment1.hpp"
 using namespace std;
 
