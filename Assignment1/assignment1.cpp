@@ -1,7 +1,7 @@
 #include <string>
 #include <fstream> // for reading files
 #include <iostream>
-#include "assignment1.h"
+#include "assignment1.hpp"
 using namespace std;
 
 arrayModifiers::arrayModifiers(){ // Constructor
