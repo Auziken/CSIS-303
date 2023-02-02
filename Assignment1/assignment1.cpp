@@ -6,12 +6,11 @@
 using namespace std;
 
 arrayModifiers::arrayModifiers(){ // Constructor
-    cout << "THIS SHOULDNT BE SHOWING UP ///  "; // WHAT DO I PUT HERE
+    // Do I need to put anything here?
 }
 
 
 void arrayModifiers::readData(string givenPath){
-    int numArray[100];
     filename = givenPath;
     ifstream dataFile(filename);
     int num;
@@ -19,10 +18,29 @@ void arrayModifiers::readData(string givenPath){
 
     while (dataFile >> num){ // This is a bit tricky. Apparently the input stream knows how to separate everything else from the integers, coupled by the fact that 'num' is an integer as well.
         numArray[index] = num;
-        cout << numArray[index] << " || ";
+        // cout << numArray[index] << " || ";
         index++;
     }
 
     
     dataFile.close(); // certified memory leak prevention moment
+}
+
+int arrayModifiers::checkArray(int givenNum){
+    bool foundNum = false;
+    int index = 0;
+
+    while(foundNum == false){
+        if (index > currentArraySize){ // Poor man's try/catch
+            cout << "Number not found in array.";
+            foundNum = true;
+        }
+        else if (numArray[index] != givenNum){
+            index++;
+        }
+        else{
+            cout << "Number '" << givenNum << "' found at index '" << index << "'.";
+            foundNum = true; // oops
+        }
+    }
 }

@@ -19,4 +19,6 @@ class arrayModifiers {
 
     private:
         string filename;
+        int const currentArraySize = 100;
+        int numArray[100]; // i think i need to intialize the array here so that the class' methods can use it
 };
