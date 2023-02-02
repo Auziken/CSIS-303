@@ -44,3 +44,15 @@ int arrayModifiers::checkArray(int givenNum){
         }
     }
 }
+
+int arrayModifiers::replaceArray(int givenIndex, int givenNum){
+    cout << "lool!!!";
+}
+
+int arrayModifiers::addArray(int givenNum){
+    cout << "lool!!!";
+}
+
+int arrayModifiers::removeArray(int givenIndex){
+    cout << "lool!!!";
+}
