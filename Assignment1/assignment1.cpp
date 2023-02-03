@@ -46,7 +46,8 @@ int arrayModifiers::checkArray(int givenNum){
 }
 
 int arrayModifiers::replaceArray(int givenIndex, int givenNum){
-    cout << "lool!!!";
+    cout << "You are replacing index " << givenIndex << ", which is currently " << numArray[givenIndex]<< ". It will now be changed to " << givenNum << ".\n";
+    numArray[givenIndex] = givenNum; // It should just be this
 }
 
 int arrayModifiers::addArray(int givenNum){
@@ -55,4 +56,11 @@ int arrayModifiers::addArray(int givenNum){
 
 int arrayModifiers::removeArray(int givenIndex){
     cout << "lool!!!";
+}
+
+void arrayModifiers::printArray(){
+    for (int i = 0; i < currentArraySize; i++){
+        cout << numArray[i] << " || ";
+    }
+    cout << "\n";
 }
