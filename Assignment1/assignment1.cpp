@@ -18,12 +18,11 @@ void arrayModifiers::readData(string givenPath){
 
     while (dataFile >> num){ // This is a bit tricky. Apparently the input stream knows how to separate everything else from the integers, coupled by the fact that 'num' is an integer as well.
         numArray[index] = num;
-        // cout << numArray[index] << " || ";
         index++;
     }
 
     
-    dataFile.close(); // certified memory leak prevention moment
+    dataFile.close(); // No memory leaks here.
 }
 
 int arrayModifiers::checkArray(int givenNum){
@@ -52,7 +51,7 @@ int arrayModifiers::replaceArray(int givenIndex, int givenNum){
         }
 
         cout << "You are replacing index " << givenIndex << ", which is currently " << numArray[givenIndex]<< ". It will now be changed to " << givenNum << ".\n";
-        numArray[givenIndex] = givenNum; // It should just be this
+        numArray[givenIndex] = givenNum; // Should just be this.
 
     } catch (out_of_range){
         cout << "Error. The given index is out of range of the array. The array's current size is " << currentArraySize << ", but has an absolute max of 150. Please try a different number.\n";
