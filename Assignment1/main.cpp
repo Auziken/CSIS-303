@@ -16,7 +16,7 @@ int main(){
     
     int selectedIndex, selectedNum;
     while (getOut == false){
-        cout << "-----\nWhat would you like to do?\n1. Find number in array.\n2. Modify existing number.\n3. Add new number.\n4.'Delete' a number.\n5. Display array.\nInput: ";
+        cout << "-----\nWhat would you like to do?\n1. Find number in array.\n2. Modify existing number.\n3. Add new number.\n4.'Delete' a number.\n5. Display array.\n6. Terminate program.\nInput: ";
         cin >> (userAnswer); // i think theres a way to do this inside of an if/switch statement
         int userAnswerNum = stoi(userAnswer);
 
@@ -56,6 +56,11 @@ int main(){
             case 5:
                 cout << "-----\n";
                 test.printArray();
+                break;
+
+            case 6:
+                cout << "-----\nTerminating program.\n";
+                getOut = true;
                 break;
             
             default:

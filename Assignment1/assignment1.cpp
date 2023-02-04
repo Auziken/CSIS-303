@@ -32,30 +32,50 @@ int arrayModifiers::checkArray(int givenNum){
 
     while(foundNum == false){
         if (index > currentArraySize){ // Poor man's try/catch
-            cout << "Number not found in array.";
+            cout << "Number not found in array.\n";
             foundNum = true;
         }
         else if (numArray[index] != givenNum){
             index++;
         }
         else{
-            cout << "Number '" << givenNum << "' found at index '" << index << "'.";
+            cout << "Number '" << givenNum << "' found at index '" << index << "'.\n";
             foundNum = true; // oops
         }
     }
 }
 
 int arrayModifiers::replaceArray(int givenIndex, int givenNum){
-    cout << "You are replacing index " << givenIndex << ", which is currently " << numArray[givenIndex]<< ". It will now be changed to " << givenNum << ".\n";
-    numArray[givenIndex] = givenNum; // It should just be this
+    try{
+        if(givenIndex > currentArraySize || givenIndex < 0){
+            throw out_of_range("oops");
+        }
+
+        cout << "You are replacing index " << givenIndex << ", which is currently " << numArray[givenIndex]<< ". It will now be changed to " << givenNum << ".\n";
+        numArray[givenIndex] = givenNum; // It should just be this
+
+    } catch (out_of_range){
+        cout << "Error. The given index is out of range of the array. The array's current size is " << currentArraySize << ", but has an absolute max of 150. Please try a different number.\n";
+    }
 }
 
 int arrayModifiers::addArray(int givenNum){
-    cout << "lool!!!";
+    try{
+        if(currentArraySize >= 150){
+            throw out_of_range("oops");
+        }
+
+        cout << "Adding number '" << givenNum << "' at index '" << currentArraySize+1 << "'.\n";
+        numArray[currentArraySize] = givenNum; // i really enjoy how arrays start at 0. this should really be currentArraySize+1 but NO thats index 101 which is NOT the last index. very disappointing c++ do better
+        currentArraySize += 1;
+    } catch (out_of_range){
+        cout << "Error. The number cannot be added to the end of the array, as the array has reached its max size of 150.";
+    }
 }
 
 int arrayModifiers::removeArray(int givenIndex){
-    cout << "lool!!!";
+    cout << "Removing '" << numArray[givenIndex] << "' at index '" << givenIndex << "'.\n";
+    numArray[givenIndex] = 0; // I'll try to figure out how to remove this number and move everything accordingly sometime later.
 }
 
 void arrayModifiers::printArray(){
