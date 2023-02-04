@@ -24,12 +24,16 @@
 
 
 
-# /// REPORT ///
+# REPORT
 I think you can just run the .exe file after downloading the entire Assignment1 folder, since the makefile should take care of all of the file linking. If not, you may need to install Make (hopefully not) and run the 'make' command while in the Assignment1 directory.
 The program will then prompt you to make 1 of 6 decisions.
+
 ![ScreenShot_20230203181547](https://user-images.githubusercontent.com/26755333/216733904-f2e1c5b4-4424-47b4-972b-95782e5cf38c.png)
+
 Typing in any of the numbers will lead you to a self-explanatory process of doing whatever it was that you selected. If you give a number that isn't 1-6, it will ask you to try again. Typing 6 terminates the program.
+
 ![ScreenShot_20230203181741](https://user-images.githubusercontent.com/26755333/216734070-2c89230f-8bc5-430b-8595-6890aa6b5b82.png)
+
 Every action SHOULD be separated by this nice divider so everything isn't all jumbled together. Above is the example of printing the array out.
 
 ~~Note: I am not responsible for any possible System32 deletion.~~
