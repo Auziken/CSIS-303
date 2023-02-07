@@ -2,7 +2,6 @@
 #include <fstream> // for reading files
 #include <iostream>
 #include "assignment1.hpp"
-#include <vector>
 using namespace std;
 
 arrayModifiers::arrayModifiers(){ // Constructor

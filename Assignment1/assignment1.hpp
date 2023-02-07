@@ -1,7 +1,6 @@
 #include <string>
 #include <fstream> // for reading files
 #include <iostream>
-#include <vector>
 using namespace std;
 
 class arrayModifiers {
