@@ -13,11 +13,13 @@ class arrayModifiers {
         int addArray(int); // Adds number to end of array.
         int removeArray(int); // Removes number at given index.
 
+        void printArray(); // Prints array.
+
         arrayModifiers(); // Constructor?
         
 
     private:
         string filename;
-        int const currentArraySize = 100;
-        int numArray[100]; // i think i need to intialize the array here so that the class' methods can use it
+        int currentArraySize = 100; // this is just so i can print the appropriate amount of spaces and stop printing out gibberish
+        int numArray[150]; // i think i need to intialize the array here so that the class' methods can use it
 };
