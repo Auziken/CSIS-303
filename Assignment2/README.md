@@ -1,7 +1,8 @@
 
 # CS-303 Assignment 2 (25 points)  
-## Q1( 15 points)  Build a Single_Linked_List class.
+## Q1 (15 points)  Build a Single_Linked_List class.
 Your class should have the data members: head, tail, and  num_items. Write the following member functions, which perform the same operations as the corresponding functions in the standard list class: 
+
 •  push_front,  
 
 •  push_back,  
