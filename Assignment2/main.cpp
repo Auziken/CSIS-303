@@ -9,12 +9,12 @@ int main(){
     string userChoice, userValue, userValue2; // i did not learn my lesson
     bool trappedforEternity = true;
 
-    while (trappedforEternity == true){
-        cout << "Would you like to 1. use the singly linked list or 2. do the employee data thing?"; // I genuinely don't know how either of these parts connect with each other, so I guess I'll just separate them.
-        cin >> userChoice;
-        if (userChoice == "1"){
-            // I know it's absolutely horrible practice to jam all of this inside of an if statement but I DONT CARE!!!
-            
+    cout << "Would you like to 1. use the singly linked list or 2. do the employee data thing?"; // I genuinely don't know how either of these parts connect with each other, so I guess I'll just separate them.
+    cin >> userChoice;
+    if (userChoice == "1"){
+        // I know it's absolutely horrible practice to jam all of this inside of an if statement but I DONT CARE!!!
+        while (trappedforEternity == true){
+        
             cout << "\n-----\nWhat would you like to do?\n1. Push front.\n2. Push back.\n3. Pop front.\n4. Pop back.\n5. Front.\n6. Back.\n7. Empty list.\n8. Insert at index.\n9. Remove at index.\n10. Find value.\n11. Quit.\nSelect: ";
             cin >> userChoice;
 
@@ -82,7 +82,10 @@ int main(){
                     break;
             }
         }
-        if (userChoice == "2"){
+    }
+    if (userChoice == "2"){
+        while (trappedforEternity == true){
+
             string firstname, lastname, hoursworked, hourlyrate;
 
             cout << "Enter employee's first name: ";
@@ -122,11 +125,9 @@ int main(){
             }
             else{
                 cout << "Invalid input. Try again.";
-            }   
-        };
+            }
+        }
     }
-    
-    
     
     return 0;
 }
