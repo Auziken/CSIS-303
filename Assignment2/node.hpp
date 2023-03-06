@@ -1,5 +1,6 @@
 #ifndef NODE_HPP
 #define NODE_HPP
+using namespace std;
 
 class Node {
 public:

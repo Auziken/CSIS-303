@@ -91,8 +91,7 @@ void Single_Linked_List::empty(){
     while (curr != nullptr){ // Go down the list and delete nodes until the end.
         next = curr->next;
         delete curr;
-        curr = next;
-        cout << "ouchie"; // FOR THE FUTURE: this is only being output once. unsure why.
+        curr = next; // why doesnt this work
     }
     head = nullptr;
     tail = nullptr;
