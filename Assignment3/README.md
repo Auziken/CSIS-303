@@ -37,3 +37,16 @@ declaration and .cpp file should have implementation details.
 of the outputs
 5) Upload your report and code files to GitHub.
 6) Submit the GitHub link on Canvas by due date.
+
+# REPORT
+Like last time, I think just running the .exe works.
+
+You can choose whether you want to do the postfix expression or the stack implementation at the beginning. Here's an example of the postfix.
+
+![image](https://user-images.githubusercontent.com/26755333/232275981-6e8e0b52-73e9-482f-b4e2-54b63d38fa5d.png)
+
+And an example of the stack.
+
+![image](https://user-images.githubusercontent.com/26755333/232276268-627760ae-2ee0-4ea4-b371-c88df335ef26.png)
+
+I hope everything works!!!!!!!!!!!!!!!!!!
